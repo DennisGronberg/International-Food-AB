@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ReceptView
 {
-    public partial class Form1 : Form
+    public partial class ShowRecipes : Form
     {
         Recipes recipe = new Recipes();
-        public Form1()
+        public ShowRecipes()
         {
             InitializeComponent();
         }
@@ -27,11 +27,14 @@ namespace ReceptView
 
         private void cmdShowRecipe_Click(object sender, EventArgs e)
         {
-            //recipe.Read();
-            foreach(Recipes recipe in recipe.Read())
+            fillList(recipe.Read());
+        }
+
+        public void fillList(List<Recipes> list)
+        {
+            foreach (Recipes recipe in list)
             {
                 lstRecipes.Items.Add(recipe.Title);
-                
             }
         }
     }

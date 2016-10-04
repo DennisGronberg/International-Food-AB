@@ -1,6 +1,6 @@
 ﻿namespace ReceptView
 {
-    partial class Form1
+    partial class ShowRecipes
     {
         /// <summary>
         /// Required designer variable.

@@ -31,9 +31,9 @@ namespace ReceptView
             }
         }
         
-        public void Create()
+        public void Create(string title, string ingredients, string author, string instructions, string category)
         {
-
+            list.Add(new Recipes { Title = title, Ingredients = ingredients, Author = author, Category = category, Instructions = instructions });
         }
 
         public List<Recipes> Read()
