@@ -15,7 +15,7 @@ namespace ReceptView
         public string Instructions { get; set; }
         public Category Category { get; set; }
         ////List<Recipes>
-
+        
 
 
         public bool ContainsInfo(string title, string author)
