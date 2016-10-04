@@ -19,8 +19,9 @@ namespace ReceptView
 
         #region Constructor
 
-        List<Recipes> list = new List<Recipes>();
         ReadAndWrite rnw = new ReadAndWrite();
+        List<Recipes> list = new List<Recipes>();
+        List<Recipes> results = new List<Recipes>();
 
         #endregion
 
@@ -43,9 +44,11 @@ namespace ReceptView
             list.Add(new Recipes { Title = title, Ingredients = ingredients, Author = author, Category = category, Instructions = instructions });
         }
 
-        public List<Recipes> Read()
+        public List<Recipes> Read(string searchText, string category)
         {
-            return list = rnw.ReadToList();
+            list = rnw.ReadToList();
+            results = list.Where(x => x.Title.Contains(searchText) && x.Category == category).ToList();
+            return results;
         }
 
         #endregion
