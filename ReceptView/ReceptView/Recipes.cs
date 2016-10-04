@@ -47,7 +47,14 @@ namespace ReceptView
         public List<Recipes> Read(string searchText, string category)
         {
             list = rnw.ReadToList();
-            results = list.Where(x => x.Title.Contains(searchText) && x.Category == category).ToList();
+            if(category == "Alla")
+            {
+                results = list.Where(x => x.Title.Contains(searchText)).ToList();
+            }
+            else
+            {
+                results = list.Where(x => x.Title.Contains(searchText) && x.Category == category).ToList();
+            }
             return results;
         }
 

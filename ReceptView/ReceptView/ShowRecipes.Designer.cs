@@ -60,9 +60,11 @@
             // 
             // cbCategory
             // 
+            this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Items.AddRange(new object[] {
-            "Kött",
+            "Alla",
+            "Koett",
             "Fisk",
             "Sallad",
             "Soppa",
