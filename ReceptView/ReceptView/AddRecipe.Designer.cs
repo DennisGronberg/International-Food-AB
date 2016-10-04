@@ -45,29 +45,33 @@
             // 
             this.lblInputRecipe.AutoSize = true;
             this.lblInputRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.lblInputRecipe.Location = new System.Drawing.Point(31, 194);
+            this.lblInputRecipe.Location = new System.Drawing.Point(23, 158);
+            this.lblInputRecipe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInputRecipe.Name = "lblInputRecipe";
-            this.lblInputRecipe.Size = new System.Drawing.Size(91, 18);
+            this.lblInputRecipe.Size = new System.Drawing.Size(77, 15);
             this.lblInputRecipe.TabIndex = 0;
             this.lblInputRecipe.Text = "Input recipe :";
             // 
             // txtInputRecipe
             // 
-            this.txtInputRecipe.Location = new System.Drawing.Point(29, 224);
+            this.txtInputRecipe.Location = new System.Drawing.Point(22, 182);
+            this.txtInputRecipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtInputRecipe.Multiline = true;
             this.txtInputRecipe.Name = "txtInputRecipe";
-            this.txtInputRecipe.Size = new System.Drawing.Size(153, 248);
+            this.txtInputRecipe.Size = new System.Drawing.Size(116, 202);
             this.txtInputRecipe.TabIndex = 1;
             // 
             // cmdSaveRecipe
             // 
             this.cmdSaveRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.8F);
-            this.cmdSaveRecipe.Location = new System.Drawing.Point(29, 490);
+            this.cmdSaveRecipe.Location = new System.Drawing.Point(22, 398);
+            this.cmdSaveRecipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdSaveRecipe.Name = "cmdSaveRecipe";
-            this.cmdSaveRecipe.Size = new System.Drawing.Size(120, 32);
+            this.cmdSaveRecipe.Size = new System.Drawing.Size(90, 26);
             this.cmdSaveRecipe.TabIndex = 2;
             this.cmdSaveRecipe.Text = "Save recipe";
             this.cmdSaveRecipe.UseVisualStyleBackColor = true;
+            this.cmdSaveRecipe.Click += new System.EventHandler(this.cmdSaveRecipe_Click);
             // 
             // cbCategory
             // 
@@ -78,18 +82,20 @@
             "Sallader ",
             "Soppa ",
             "Dessert"});
-            this.cbCategory.Location = new System.Drawing.Point(164, 88);
+            this.cbCategory.Location = new System.Drawing.Point(123, 72);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(124, 24);
+            this.cbCategory.Size = new System.Drawing.Size(94, 21);
             this.cbCategory.TabIndex = 3;
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
             this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.lblCategory.Location = new System.Drawing.Point(26, 89);
+            this.lblCategory.Location = new System.Drawing.Point(20, 72);
+            this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(112, 18);
+            this.lblCategory.Size = new System.Drawing.Size(90, 15);
             this.lblCategory.TabIndex = 4;
             this.lblCategory.Text = "Food category :";
             // 
@@ -97,59 +103,65 @@
             // 
             this.lblAuthor.AutoSize = true;
             this.lblAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.lblAuthor.Location = new System.Drawing.Point(31, 135);
+            this.lblAuthor.Location = new System.Drawing.Point(23, 110);
+            this.lblAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(59, 18);
+            this.lblAuthor.Size = new System.Drawing.Size(48, 15);
             this.lblAuthor.TabIndex = 5;
             this.lblAuthor.Text = "Author :";
             // 
             // txtAuthor
             // 
-            this.txtAuthor.Location = new System.Drawing.Point(164, 131);
+            this.txtAuthor.Location = new System.Drawing.Point(123, 106);
+            this.txtAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(124, 22);
+            this.txtAuthor.Size = new System.Drawing.Size(94, 20);
             this.txtAuthor.TabIndex = 6;
             // 
             // txtInstructions
             // 
-            this.txtInstructions.Location = new System.Drawing.Point(230, 224);
+            this.txtInstructions.Location = new System.Drawing.Point(172, 182);
+            this.txtInstructions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtInstructions.Multiline = true;
             this.txtInstructions.Name = "txtInstructions";
-            this.txtInstructions.Size = new System.Drawing.Size(164, 248);
+            this.txtInstructions.Size = new System.Drawing.Size(124, 202);
             this.txtInstructions.TabIndex = 8;
             // 
             // lblInstructions
             // 
             this.lblInstructions.AutoSize = true;
             this.lblInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.lblInstructions.Location = new System.Drawing.Point(227, 194);
+            this.lblInstructions.Location = new System.Drawing.Point(170, 158);
+            this.lblInstructions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(127, 18);
+            this.lblInstructions.Size = new System.Drawing.Size(105, 15);
             this.lblInstructions.TabIndex = 7;
             this.lblInstructions.Text = "Input instructions :";
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(164, 46);
+            this.txtTitle.Location = new System.Drawing.Point(123, 37);
+            this.txtTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(124, 22);
+            this.txtTitle.Size = new System.Drawing.Size(94, 20);
             this.txtTitle.TabIndex = 10;
             // 
             // lblRecipeName
             // 
             this.lblRecipeName.AutoSize = true;
             this.lblRecipeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.lblRecipeName.Location = new System.Drawing.Point(26, 46);
+            this.lblRecipeName.Location = new System.Drawing.Point(20, 37);
+            this.lblRecipeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRecipeName.Name = "lblRecipeName";
-            this.lblRecipeName.Size = new System.Drawing.Size(117, 18);
+            this.lblRecipeName.Size = new System.Drawing.Size(97, 15);
             this.lblRecipeName.TabIndex = 9;
             this.lblRecipeName.Text = "Name of recipe :";
             // 
             // AddRecipe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(523, 552);
+            this.ClientSize = new System.Drawing.Size(392, 448);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.lblRecipeName);
             this.Controls.Add(this.txtInstructions);
@@ -161,7 +173,9 @@
             this.Controls.Add(this.cmdSaveRecipe);
             this.Controls.Add(this.txtInputRecipe);
             this.Controls.Add(this.lblInputRecipe);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddRecipe";
+            this.ShowIcon = false;
             this.Text = "AddRecipe";
             this.ResumeLayout(false);
             this.PerformLayout();
