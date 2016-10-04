@@ -12,10 +12,10 @@ namespace ReceptView
 {
     public partial class Form1 : Form
     {
+        Recipes recipe = new Recipes();
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         private void cmdAddRecipe_Click(object sender, EventArgs e)
@@ -25,7 +25,12 @@ namespace ReceptView
 
         private void cmdShowRecipe_Click(object sender, EventArgs e)
         {
-            //Show List
+            //recipe.Read();
+            foreach(Recipes recipe in recipe.Read())
+            {
+                lstRecipes.Items.Add(recipe.Title);
+                
+            }
         }
     }
 }
