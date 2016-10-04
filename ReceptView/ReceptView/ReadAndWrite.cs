@@ -10,7 +10,7 @@ namespace ReceptView
     public class ReadAndWrite
     {
         //string path = ("C:\\Grupparbete");
-        string directory = Directory.GetCurrentDirectory() + "\\RecipesDatabase.txt";
+        string path = Directory.GetCurrentDirectory() + "\\RecipeDatabase.txt";
 
         public void WriteToFile(string title, string ingredients, string author, string instructions, string category)
         {
@@ -58,7 +58,7 @@ namespace ReceptView
         public List<Recipes> ReadToList()
         {
             List<Recipes> recipeList = new List<Recipes>();
-            StreamReader reader = new StreamReader(path + "\\Recept.txt");
+            StreamReader reader = new StreamReader(path);
             try
             {
                 string row = reader.ReadLine();
