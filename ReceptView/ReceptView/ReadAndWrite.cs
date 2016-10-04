@@ -20,24 +20,22 @@ namespace ReceptView
             Save.Add(instructions);
             Save.Add(category);
             
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
-            if (!File.Exists(path))
-            {
-                StreamWriter sw = new StreamWriter(path, true);
+            //if (!Directory.Exists(path))
+            //    Directory.CreateDirectory(path);
+            //if (!File.Exists(path))
+            //{
+            //    StreamWriter sw = new StreamWriter(path, true);
                 
 
-            }
-            else
-            {
-                StreamWriter sw = new StreamWriter(path);
+            //}
+            //else
+            //{
+                StreamWriter sw = new StreamWriter(path,true);
                 try
-                {
-                    
-                
+                {              
                 foreach (string s in Save)
                 {
-                    sw.WriteLine(s);
+                    sw.Write(s+"|");
                 }
                 
                 }
@@ -50,7 +48,7 @@ namespace ReceptView
                     sw.Close();
                 }
 
-            }
+            //}
 
         }
 
