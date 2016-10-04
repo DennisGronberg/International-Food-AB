@@ -42,7 +42,7 @@ namespace ReceptView
         public void Create(string title, string ingredients, string author, string instructions, string category)
         {
             list.Add(new Recipes { Title = title, Ingredients = ingredients, Author = author, Category = category, Instructions = instructions });
-            rw.WriteToFile(title, ingredients, author, instructions, category);
+            rnw.WriteToFile(title, ingredients, author, instructions, category);
         }
 
         public List<Recipes> Read(string searchText, string category)
