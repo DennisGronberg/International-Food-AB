@@ -34,7 +34,7 @@ namespace ReceptView
 
         private void cmdShowRecipe_Click(object sender, EventArgs e)
         {
-            //fillList(recipe.Read(txtSearch.Text, cbCategory.SelectedItem.ToString()));
+            // ladda lstShowRecipe
         }
 
         public void fillList(List<Recipes> list)
