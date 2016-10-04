@@ -21,6 +21,8 @@ namespace ReceptView
         private void cmdAddRecipe_Click(object sender, EventArgs e)
         {
             //Add Recipe
+            AddRecipe frm = new AddRecipe();
+            frm.Show();
         }
 
         private void cmdShowRecipe_Click(object sender, EventArgs e)
