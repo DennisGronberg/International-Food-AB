@@ -9,7 +9,8 @@ namespace ReceptView
 {
     public class ReadAndWrite
     {
-        string path = ("C:\\Grupparbete");
+        //string path = ("C:\\Grupparbete");
+        string directory = Directory.GetCurrentDirectory() + "\\RecipesDatabase.txt";
 
         public void WriteToFile(string title, string ingredients, string author, string instructions, string category)
         {
