@@ -5,19 +5,27 @@ using System.Text;
 
 namespace ReceptView
 {
-    //public enum Category { Kött, Fisk, Sallader, Soppa, Dessert }
-    
     public class Recipes
     {
+        #region Properties
+
         public string Title { get; set; }
         public string Ingredients { get; set; }
         public string Author { get; set; }
         public string Instructions { get; set; }
         public string Category { get; set; }
+
+        #endregion
+
+        #region Constructor
+
+        ReadAndWrite rnw = new ReadAndWrite();
         List<Recipes> list = new List<Recipes>();
-        ReadAndWrite rw = new ReadAndWrite();
+        List<Recipes> results = new List<Recipes>();
 
+        #endregion
 
+        #region Methods
 
         public bool ContainsInfo(string title, string author)
         {
@@ -36,10 +44,21 @@ namespace ReceptView
             list.Add(new Recipes { Title = title, Ingredients = ingredients, Author = author, Category = category, Instructions = instructions });
         }
 
-        public List<Recipes> Read()
+        public List<Recipes> Read(string searchText, string category)
         {
-            return list = rw.ReadToList();
+            list = rnw.ReadToList();
+            if(category == "Alla")
+            {
+                results = list.Where(x => x.Title.Contains(searchText)).ToList();
+            }
+            else
+            {
+                results = list.Where(x => x.Title.Contains(searchText) && x.Category == category).ToList();
+            }
+            return results;
         }
+
+        #endregion
 
         public void Update()
         {
