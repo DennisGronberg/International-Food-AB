@@ -15,6 +15,17 @@ namespace ReceptView
         public Form1()
         {
             InitializeComponent();
+            
+        }
+
+        private void cmdAddRecipe_Click(object sender, EventArgs e)
+        {
+            //Add Recipe
+        }
+
+        private void cmdShowRecipe_Click(object sender, EventArgs e)
+        {
+            //Show List
         }
     }
 }
