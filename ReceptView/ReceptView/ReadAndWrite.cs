@@ -21,17 +21,7 @@ namespace ReceptView
             Save.Add(author);
             Save.Add(instructions);
             Save.Add(category);
-            
-            //if (!Directory.Exists(path))
-            //    Directory.CreateDirectory(path);
-            //if (!File.Exists(path))
-            //{
-            //    StreamWriter sw = new StreamWriter(path, true);
-                
-
-            //}
-            //else
-            //{
+          
                 StreamWriter sw = new StreamWriter(path,true);
                 try
                 {              
