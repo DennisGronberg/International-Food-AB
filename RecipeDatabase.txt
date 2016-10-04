@@ -3,3 +3,4 @@ test2|namn2|Fisk|Aborre|fånga
 test3|namm3|Sallad|Tomat|hacka
 test4|namn4|Soppa|Fisk|koka
 test5|namn5|Dessert|Socker,Grädde|baka
+test6|namn6|Koett|hejhej|japp
