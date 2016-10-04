@@ -113,7 +113,7 @@
             this.txtSearch.Size = new System.Drawing.Size(100, 20);
             this.txtSearch.TabIndex = 7;
             // 
-            // Form1
+            // ShowRecipes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,7 +126,7 @@
             this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.cmdAddRecipe);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "ShowRecipes";
             this.ShowIcon = false;
             this.Text = "International Food AB";
             this.ResumeLayout(false);
