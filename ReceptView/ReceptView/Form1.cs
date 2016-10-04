@@ -15,8 +15,7 @@ namespace ReceptView
         public Form1()
         {
             InitializeComponent();
-            WriteToFile w = new WriteToFile();
-            w.Write();
+            
         }
     }
 }

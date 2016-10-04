@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ReceptView
 {
-    public class WriteToFile
+    public class ReadAndWrite
     {
-        public void Write()
+        public void WriteToFile()
         {
             string path = ("C:\\Grupparbete");
             if (!Directory.Exists(path))
@@ -30,9 +30,12 @@ namespace ReceptView
                     sw.Close();
                 }
 
-
-
             }
+            
+
+        }
+        public List<Recipes> Read()
+        {
 
         }
     }
