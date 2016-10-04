@@ -103,9 +103,9 @@
             this.lblSearch.AutoSize = true;
             this.lblSearch.Location = new System.Drawing.Point(139, 36);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(47, 13);
+            this.lblSearch.Size = new System.Drawing.Size(32, 13);
             this.lblSearch.TabIndex = 6;
-            this.lblSearch.Text = "Search: ";
+            this.lblSearch.Text = "Sök: ";
             // 
             // txtSearch
             // 
