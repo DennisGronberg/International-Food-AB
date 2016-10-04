@@ -19,12 +19,12 @@ namespace ReceptView
 
         private void cmdAddRecipe_Click(object sender, EventArgs e)
         {
-            //Add recipe
+            //Add Recipe
         }
 
         private void cmdShowRecipe_Click(object sender, EventArgs e)
         {
-            //Show list
+            //Show List
         }
     }
 }
