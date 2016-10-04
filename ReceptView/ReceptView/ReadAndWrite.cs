@@ -9,8 +9,6 @@ namespace ReceptView
 {
     public class ReadAndWrite
     {
-        //string path = ("C:\\Grupparbete");...
-        //string path = Directory.GetCurrentDirectory() + "\\RecipeDatabase.txt";
         string path = "..\\..\\..\\..\\RecipeDatabase.txt";
 
         public void WriteToFile(string title, string ingredients, string author, string instructions, string category)
@@ -61,7 +59,6 @@ namespace ReceptView
             }
             catch(Exception ex)
             {
-                string test = ex.StackTrace;
                 /* väldigt mycket fel */
                 recipeList = new List<Recipes>();
                 return recipeList;

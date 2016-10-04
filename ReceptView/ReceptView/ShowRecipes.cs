@@ -13,15 +13,18 @@ namespace ReceptView
 {
     public partial class ShowRecipes : Form
     {
-        
+        #region Constructor
 
         Recipes recipe = new Recipes();
+
         public ShowRecipes()
         {
-            
             InitializeComponent();
             cbCategory.SelectedIndex = 0;
+            fillList(recipe.Read());
         }
+
+        #endregion
 
         private void cmdAddRecipe_Click(object sender, EventArgs e)
         {
@@ -31,12 +34,7 @@ namespace ReceptView
 
         private void cmdShowRecipe_Click(object sender, EventArgs e)
         {
-            if(cbCategory.SelectedItem == null)
-            {
-                cbCategory.SelectedItem = "";
-            }
-            fillList(recipe.Read(txtSearch.Text, cbCategory.SelectedItem.ToString()));
-
+            //fillList(recipe.Read(txtSearch.Text, cbCategory.SelectedItem.ToString()));
         }
 
         public void fillList(List<Recipes> list)
@@ -46,6 +44,11 @@ namespace ReceptView
             {
                 lstRecipes.Items.Add(recipe.Title);
             }
+        }
+
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fillList(recipe.Search(txtSearch.Text, cbCategory.SelectedItem.ToString()));
         }
     }
 }

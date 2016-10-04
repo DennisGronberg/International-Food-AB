@@ -45,7 +45,7 @@ namespace ReceptView
             rnw.WriteToFile(title, ingredients, author, instructions, category);
         }
 
-        public List<Recipes> Read(string searchText, string category)
+        public List<Recipes> Search(string searchText, string category)
         {
             list = rnw.ReadToList();
             if (category == "Alla")
@@ -59,6 +59,11 @@ namespace ReceptView
             return results;
         }
 
+        public List<Recipes> Read()
+        {
+            return list = rnw.ReadToList();
+        }
+        
         #endregion
 
         public void Update()
