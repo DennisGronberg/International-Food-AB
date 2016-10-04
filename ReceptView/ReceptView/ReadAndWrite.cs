@@ -11,17 +11,35 @@ namespace ReceptView
     {
         string path = ("C:\\Grupparbete");
 
-        public void WriteToFile()
+        public void WriteToFile(string title, string ingredients, string author, string instructions, string category)
         {
+            List<string> Save = new List<string>();
+            Save.Add(title);
+            Save.Add(ingredients);
+            Save.Add(author);
+            Save.Add(instructions);
+            Save.Add(category);
+            
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
             if (!File.Exists(path + "\\Recept.txt"))
             {
-                StreamWriter sw = new StreamWriter(path, true);
+                StreamWriter sw = new StreamWriter(path + "\\Recept.txt", true);
+                
+
+            }
+            else
+            {
+                StreamWriter sw = new StreamWriter(path + "\\Recept.txt");
                 try
                 {
-                    sw = new StreamWriter(path + "\\Recept.txt");
-                    sw.Write("Recept");
+                    
+                
+                foreach (string s in Save)
+                {
+                    sw.WriteLine(s);
+                }
+                
                 }
                 catch (Exception ex)
                 {
@@ -33,7 +51,6 @@ namespace ReceptView
                 }
 
             }
-
 
         }
 
