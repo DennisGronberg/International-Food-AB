@@ -71,6 +71,7 @@
             this.cmdSaveRecipe.TabIndex = 2;
             this.cmdSaveRecipe.Text = "Save recipe";
             this.cmdSaveRecipe.UseVisualStyleBackColor = true;
+            this.cmdSaveRecipe.Click += new System.EventHandler(this.cmdSaveRecipe_Click);
             // 
             // cbCategory
             // 
