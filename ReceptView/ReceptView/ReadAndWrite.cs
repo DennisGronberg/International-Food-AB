@@ -24,15 +24,15 @@ namespace ReceptView
             
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
-            if (!File.Exists(path + "\\Recept.txt"))
+            if (!File.Exists(path))
             {
-                StreamWriter sw = new StreamWriter(path + "\\Recept.txt", true);
+                StreamWriter sw = new StreamWriter(path, true);
                 
 
             }
             else
             {
-                StreamWriter sw = new StreamWriter(path + "\\Recept.txt");
+                StreamWriter sw = new StreamWriter(path);
                 try
                 {
                     

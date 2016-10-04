@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ReceptView
 {
     public partial class ShowRecipes : Form
     {
+        
+
         Recipes recipe = new Recipes();
         public ShowRecipes()
         {
+            
             InitializeComponent();
             cbCategory.SelectedIndex = 0;
         }
