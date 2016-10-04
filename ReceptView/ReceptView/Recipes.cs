@@ -14,7 +14,7 @@ namespace ReceptView
         public string Author { get; set; }
         public string Instructions { get; set; }
         public Category Category { get; set; }
-        //List<Recipes>
+        ////List<Recipes>
 
 
 
