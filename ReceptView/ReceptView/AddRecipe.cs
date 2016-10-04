@@ -16,5 +16,10 @@ namespace ReceptView
         {
             InitializeComponent();
         }
+
+        private void cmdSaveRecipe_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
