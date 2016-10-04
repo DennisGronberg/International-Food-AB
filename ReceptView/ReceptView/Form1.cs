@@ -15,6 +15,7 @@ namespace ReceptView
         public Form1()
         {
             InitializeComponent();
+            
         }
     }
 }
