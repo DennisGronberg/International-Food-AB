@@ -36,6 +36,7 @@
             this.cmdShowRecipe = new System.Windows.Forms.Button();
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.cmdDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -113,11 +114,21 @@
             this.txtSearch.Size = new System.Drawing.Size(100, 20);
             this.txtSearch.TabIndex = 7;
             // 
-            // Form1
+            // cmdDelete
+            // 
+            this.cmdDelete.Location = new System.Drawing.Point(280, 294);
+            this.cmdDelete.Name = "cmdDelete";
+            this.cmdDelete.Size = new System.Drawing.Size(75, 23);
+            this.cmdDelete.TabIndex = 8;
+            this.cmdDelete.Text = "Ta bort";
+            this.cmdDelete.UseVisualStyleBackColor = true;
+            // 
+            // ShowRecipes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 324);
+            this.Controls.Add(this.cmdDelete);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.cmdShowRecipe);
@@ -126,7 +137,7 @@
             this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.cmdAddRecipe);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "ShowRecipes";
             this.ShowIcon = false;
             this.Text = "International Food AB";
             this.ResumeLayout(false);
@@ -144,6 +155,7 @@
         private System.Windows.Forms.Button cmdShowRecipe;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button cmdDelete;
     }
 }
 
