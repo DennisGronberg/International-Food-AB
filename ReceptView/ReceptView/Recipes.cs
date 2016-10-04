@@ -5,17 +5,18 @@ using System.Text;
 
 namespace ReceptView
 {
-    public enum Category { Kött, Fisk, Sallader, Soppa, Dessert }
+    //public enum Category { Kött, Fisk, Sallader, Soppa, Dessert }
     
     public class Recipes
     {
         public string Title { get; set; }
-        public List<string> Ingredients { get; set; }
+        public string Ingredients { get; set; }
         public string Author { get; set; }
         public string Instructions { get; set; }
-        public Category Category { get; set; }
-        ////List<Recipes>
-        
+        public string Category { get; set; }
+        List<Recipes> list = new List<Recipes>();
+        ReadAndWrite rw = new ReadAndWrite();
+
 
 
         public bool ContainsInfo(string title, string author)
@@ -35,9 +36,9 @@ namespace ReceptView
 
         }
 
-        public void Read()
+        public List<Recipes> Read()
         {
-
+            return list = rw.ReadToList();
         }
 
         public void Update()
