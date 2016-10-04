@@ -31,7 +31,7 @@ namespace ReceptView
             }
         }
         
-        public void Create()
+        public void Create(string title,string ingredients,string author,string instructions,string category)
         {
 
         }

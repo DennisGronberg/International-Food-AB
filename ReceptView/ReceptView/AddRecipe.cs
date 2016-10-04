@@ -19,7 +19,16 @@ namespace ReceptView
 
         private void cmdSaveRecipe_Click(object sender, EventArgs e)
         {
-
+            Recipes recipe = new Recipes();
+            if (recipe.ContainsInfo(txtTitle.Text, txtAuthor.Text) == true)
+            {
+                recipe.Create(txtTitle.Text, cbCategory.SelectedItem.ToString(), txtAuthor.Text, txtInputRecipe.Text, txtInstructions.Text);
+            }
+            else
+            {
+                MessageBox.Show("Inte tillräcklig information.");
+            }
+            
         }
     }
 }
