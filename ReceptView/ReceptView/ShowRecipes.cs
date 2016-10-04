@@ -16,22 +16,28 @@ namespace ReceptView
         public ShowRecipes()
         {
             InitializeComponent();
+            cbCategory.SelectedIndex = 0;
         }
 
         private void cmdAddRecipe_Click(object sender, EventArgs e)
         {
-            //Add Recipe
             AddRecipe frm = new AddRecipe();
             frm.Show();
         }
 
         private void cmdShowRecipe_Click(object sender, EventArgs e)
         {
-            fillList(recipe.Read());
+            if(cbCategory.SelectedItem == null)
+            {
+                cbCategory.SelectedItem = "";
+            }
+            fillList(recipe.Read(txtSearch.Text, cbCategory.SelectedItem.ToString()));
+
         }
 
         public void fillList(List<Recipes> list)
         {
+            lstRecipes.Items.Clear();
             foreach (Recipes recipe in list)
             {
                 lstRecipes.Items.Add(recipe.Title);

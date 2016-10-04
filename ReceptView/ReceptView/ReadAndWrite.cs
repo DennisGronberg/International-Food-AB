@@ -71,6 +71,7 @@ namespace ReceptView
             }
             catch(Exception ex)
             {
+                string test = ex.StackTrace;
                 /* väldigt mycket fel */
                 recipeList = new List<Recipes>();
                 return recipeList;
